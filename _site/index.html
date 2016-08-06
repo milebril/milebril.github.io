@@ -1,11 +1,8 @@
----
----
-
 <!DOCTYPE html>
 <html class="">
 <head>
     <meta charset=utf-8 />
-    <title> {% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer </title>
+    <title>  John Doe, Photographer </title>
     
     <link rel="stylesheet" href="/assets/css/3-sections/header.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/footer.css" />
@@ -14,11 +11,39 @@
     
 <body style="margin: 0">
  
-    {% include header.html %}
+    <header>
+    <div class="logo"> </div>
+    
+    <nav>
+        <a href="">About Me</a>
+        <a href="">Work</a>
+        <a href="">Contact</a>
+    </nav>
+    
+    <h1><span>Cope</span></h1>
+    <p class="kicker">House // EDM // Techno</p>
+    
+</header>
     
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
     
-    {% include footer.html %}
+    <footer>
+    <div class="lockup">
+        
+        <div class="logo"></div>
+        
+        <div class="content-wrap">
+        <nav>
+            <a href="">About Me</a>
+            <a href="">Work</a>
+            <a href="">Contact</a>
+        </nav>
+            
+        <p class="copyright">Rights reserved 2016</p>
+        </div>
+        
+    </div>
+</footer>
 </body>
     
 </html>
