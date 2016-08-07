@@ -1,0 +1,76 @@
+---
+---
+
+.about-section{
+    background: #f6f6f6;
+    
+    h3 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: darkblue;
+        padding-top: 75px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    
+    .lockup {
+        max-width: 780px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        
+        .face-img {
+            width: 200px;
+            height: 200px;
+            background: url(../../img/corneel-face.jpg);
+            border-radius: 50%;
+            order: 3
+        }
+        
+        [class^="icon-"] {
+            border-radius: 50%;
+            //background: red;
+            height: 100px;
+            width: 100px;
+            background: #d3d3d3;
+            
+            &.icon-profile {
+                &:hover {
+                    background: white;
+                }
+                order: 1
+            }
+            &.icon-soundcloud {
+                &:hover {
+                    background: white;
+                }
+                order: 2;
+            }
+            &.icon-youtube {
+                order: 4;
+            }
+            &.icon-facebook {
+                order: 5;
+            }
+            
+            &:hover .tocolor {
+                fill: white !important;
+            }
+
+        }
+    }
+    
+    .text {
+        align-items: center;
+        color: darkgray;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        max-width: 620px;
+        padding: 0 15px 50px 15px;
+        margin: 50px auto 0 auto;
+    }
+}

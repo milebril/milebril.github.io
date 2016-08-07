@@ -1,0 +1,51 @@
+.about-section {
+  background: #f6f6f6; }
+  .about-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: darkblue;
+    padding-top: 75px;
+    margin: 0;
+    text-transform: uppercase; }
+  .about-section .lockup {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px; }
+    .about-section .lockup .face-img {
+      width: 200px;
+      height: 200px;
+      background: url(../../img/corneel-face.jpg);
+      border-radius: 50%;
+      order: 3; }
+    .about-section .lockup [class^="icon-"] {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background: #d3d3d3; }
+      .about-section .lockup [class^="icon-"].icon-profile {
+        order: 1; }
+        .about-section .lockup [class^="icon-"].icon-profile:hover {
+          background: white; }
+      .about-section .lockup [class^="icon-"].icon-soundcloud {
+        order: 2; }
+        .about-section .lockup [class^="icon-"].icon-soundcloud:hover {
+          background: white; }
+      .about-section .lockup [class^="icon-"].icon-youtube {
+        order: 4; }
+      .about-section .lockup [class^="icon-"].icon-facebook {
+        order: 5; }
+      .about-section .lockup [class^="icon-"]:hover .tocolor {
+        fill: white !important; }
+  .about-section .text {
+    align-items: center;
+    color: darkgray;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    max-width: 620px;
+    padding: 0 15px 50px 15px;
+    margin: 50px auto 0 auto; }
