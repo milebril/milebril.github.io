@@ -7,9 +7,12 @@
     <meta charset=utf-8 />
     <title> {% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer </title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="/assets/css/3-sections/header.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/footer.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/about.css" />
+    <link rel="stylesheet" href="/assets/css/3-sections/findme.css" />
 </head>
     
     
@@ -19,7 +22,11 @@
     
     {% include about.html %}
     
+    {% include findme.html %}
+    
     {% include footer.html %}
+    
+    <script src="assets/js/about_event.js"></script>
 </body>
     
 </html>
