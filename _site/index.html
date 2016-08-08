@@ -5,6 +5,8 @@
     <title>  John Doe, Photographer </title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+      
     
     <link rel="stylesheet" href="/assets/css/3-sections/header.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/footer.css" />
@@ -245,7 +247,18 @@
         </div>
 
         <div class="youtube" id="info" style="display:none">
-            <p class="text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</strong> Schaliegas is aardgas dat wordt gewonnen uit schalie. Om dit gesteente te bereiken worden boringen uitgevoerd die horizontaal worden voortgezet, zodra de steenlaag bereikt is.Aangezien boringen niet voldoende zijn om het gas te doen vrijkomen, dient de boorput te worden gestimuleerd. Dit gebeurt middels een techniek die hydraulisch fractureren, fraccen of (Engels) "fracking" genoemd wordt. Hierbij worden onder hoge druk grote hoeveelheden water, zand en chemicaliën ingespoten</p>
+                
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    userId: '463767176',
+                    limit: 12,
+                    accessToken: '463767176.140194c.fadf5e5bf908491780432b2a763722cd'
+                });
+                userFeed.run();
+            </script>
+
+            <div class="insta" id="instafeed"></div>
         </div>
         
         <div class="soundcloud" id="info" style="display:none">
@@ -262,8 +275,8 @@
 </section>
     
     <section class="findme-section">
-
-
+      
+    
 </section>
     
     <footer>
