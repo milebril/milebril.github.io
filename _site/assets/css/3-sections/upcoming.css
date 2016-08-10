@@ -1,0 +1,28 @@
+.upcoming-section {
+  background: darkgray; }
+  .upcoming-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F5B616;
+    padding-top: 75px;
+    margin: 0;
+    text-transform: uppercase; }
+  .upcoming-section .boxes {
+    padding: 30px 0;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center; }
+    .upcoming-section .boxes li {
+      display: inline-block;
+      margin-right: 20px;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .upcoming-section .container {
+    display: block;
+    background: pink;
+    width: 400px;
+    height: 300px; }
