@@ -1,0 +1,35 @@
+.contact-section {
+  background: #f6f6f6; }
+  .contact-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F5B616;
+    padding-top: 75px;
+    margin: 0;
+    text-transform: uppercase; }
+  .contact-section .wrapper {
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact-section .wrapper li {
+      margin-right: 20px;
+      display: inline-block; }
+    .contact-section .wrapper .contactForm {
+      background: pink;
+      width: 400px;
+      height: 300px; }
+    .contact-section .wrapper .vertical-line {
+      background: darkgray;
+      height: 290px;
+      width: 2px;
+      border-radius: 98%; }
+    .contact-section .wrapper .contactText {
+      width: 400px;
+      font-weight: 700;
+      font-size: 14   px;
+      color: darkgray; }
+      .contact-section .wrapper .contactText br {
+        padding-bottom: 5px; }
