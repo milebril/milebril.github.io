@@ -2,12 +2,31 @@
     <div class="logo"> </div>
     
     <nav>
-        <a href="">About Me</a>
-        <a href="">Upcoming</a>
-        <a href="">Contact</a>
+        <a href="#" id="aboutlink">About Me</a>
+        <a href="#" id="upcominglink">Upcoming</a>
+        <a href="#" id="contactlink">Contact</a>
     </nav>
     
     <h1><span>Cope</span></h1>
     <p class="kicker">House // EDM // Techno</p>
+    
+    <script>
+        function goToByScroll(id){
+          // Reove "link" from the ID
+        id = id.replace("link", "");
+          // Scroll
+        $('html,body').animate({
+            scrollTop: $("#"+id).offset().top},
+            'slow');
+    }
+
+    $("nav > a").click(function(e) { 
+          // Prevent a page reload when a link is pressed
+        e.preventDefault(); 
+          // Call the scroll function
+        goToByScroll($(this).attr("id"));           
+    });
+    
+    </script>
     
 </header>
