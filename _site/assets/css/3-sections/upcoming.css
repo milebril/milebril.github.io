@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
 .upcoming-section {
-  background: darkgray; }
+  background: #E7E7E7;
+  padding-bottom: 75px; }
   .upcoming-section h3 {
     text-align: center;
     font-size: 24px;
@@ -19,16 +21,21 @@
       color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       font-weight: 700;
-      text-transform: uppercase;
       text-decoration: none; }
-  .upcoming-section .container {
-    display: block;
-    background: pink;
+  .upcoming-section .card {
     width: 400px;
-    height: 300px; }
-  .upcoming-section h4 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    padding-top: 10px;
-    text-transform: uppercase; }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; }
+  .upcoming-section .card:hover p {
+    opacity: 1; }
+  .upcoming-section .text-container {
+    margin-top: -1px;
+    padding: 10px; }
+    .upcoming-section .text-container p {
+      font-family: lato;
+      color: black;
+      font-size: x-large;
+      opacity: 0.6; }
+  .upcoming-section img {
+    width: 100%;
+    height: 250px; }

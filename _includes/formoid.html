@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Book Me - Formoid form css</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="blurBg-false" style="background-color:#EBEBEB">
+
+
+
+<!-- Start Formoid form-->
+<link rel="stylesheet" href="formoid_files/formoid1/formoid-flat-yellow.css" type="text/css" />
+<script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+<form class="formoid-flat-yellow"
+      id="booking-from"
+      style="background-color:#f6f6f6;font-size:15px;font-family:'Lato', sans-serif;color:#666666;max-width:480px;min-width:360px"
+      method="post"
+      enctype="text/plain">
+    <div class="title">
+        <h2>Book Me</h2>
+    </div>
+	<div class="element-input">
+        <label class="title">Name<span class="required">*</span></label>
+        <input class="large" id="name" type="text" name="input" required="required"/>
+    </div>
+	<div class="element-textarea">
+        <label class="title">Discription</label>
+        <textarea class="medium" id="discription"  name="textarea" cols="20" rows="5" ></textarea>
+    </div>
+	<div class="element-date">
+        <label class="title">Date<span class="required">*</span></label>
+        <input class="large" id="date"  data-format="yyyy-mm-dd" type="date" name="date" required="required" placeholder="yyyy-mm-dd"/>
+    </div>
+	<div class="element-email">
+        <label class="title">Email<span class="required">*</span></label>
+        <input class="large" id="mail"  type="email" name="email" value="" required="required"/>
+    </div>
+	<div class="element-phone"><label class="title">Phone Number</label>
+        <input class="large" id="phone"  type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone"  value=""/>
+    </div>
+    <div class="submit">
+        <input type="button" id="send" value="Send Mail"/>
+    </div>
+</form>
+<!-- Stop Formoid form-->
+
+<script>
+    $(document).ready(function() {
+        $('#send').click(function() {
+            $('#booking-from').attr('action',
+                'mailto:milebril1@hotmail.com?subject=Booking Cope' +
+                '&body= Hoi' +
+                'name: ' + $('#name').val() +
+                'discription: ' + $('#discription').val());
+            $('#booking-from').submit();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

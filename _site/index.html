@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="/assets/css/3-sections/about.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/upcoming.css" />
     <link rel="stylesheet" href="/assets/css/3-sections/contact.css" />
+    <link rel="stylesheet" href="/assets/css/3-sections/formoid-flat-yellow.css"/>
 </head>
     
     
 <body style="margin: 0">
  
     <header>
-    <div class="logo"> </div>
-    
     <nav>
         <a href="#" id="aboutlink">About Me</a>
         <a href="#" id="upcominglink">Upcoming</a>
         <a href="#" id="contactlink">Contact</a>
     </nav>
     
-    <h1><span>Cope</span></h1>
+    <h1><span>&copy;ope</span></h1>
     <p class="kicker">House // EDM // Techno</p>
     
     <script>
@@ -116,7 +115,7 @@
         <div class="icon-soundcloud" id="soundcloud"> <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+	 viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve" width="90%" height="90%">
 <g>
     <path style="fill:#FF7700;" d="M72.83,218.485h18.207V103.832c-6.828,1.93-12.982,5.435-18.207,10.041
 		C72.83,113.874,72.83,218.485,72.83,218.485z M36.415,140.921v77.436l1.174,0.127h17.033v-77.682H37.589
@@ -261,9 +260,9 @@
             <script type="text/javascript">
                 var userFeed = new Instafeed({
                     get: 'user',
-                    userId: '414399418',
+                    userId: '463767176',
                     limit: 12,
-                    accessToken: '414399418.69d383c.79eb87a3cb7a4b6ea67540087c8277a9',
+                    accessToken: '463767176.140194c.fadf5e5bf908491780432b2a763722cd',
                     after: function() {
                         external();
                     }
@@ -296,17 +295,41 @@
 </section>
     
     <section class="upcoming-section" id="upcoming">
-    <h3>Upcoming</h3>
+    <h3>Find me At</h3>
     
     <ul class="boxes">
         <li class="first-col">
-            <div class="container"><h4>Tournee</h4></div>
+            <a href="#" target="_blank" style="text-decoration: none; decoration: none;">
+                <div class="card">
+                    <img src="../assets/img/logo-recup.jpg" />
+                    <!--<div style="height: 1px; width: 100%; background: black;"> </div>-->
+                    <div class="text-container">
+                        <p>Recup</p>
+                    </div>
+                </div>
+            </a>
         </li>
         <li class="second-col">
-            <div class="container"><h4>Den Aap</h4></div>
+            <a href="#" target="_blank" style="text-decoration: none; decoration: none;">
+                <div class="card">
+                    <img src="../assets/img/logo-denaap.jpg" />
+                    <!--<div style="height: 1px; width: 100%; background: black;"> </div>-->
+                    <div class="text-container">
+                        <p>JH Den Aap</p>
+                    </div>
+                </div>
+            </a>
         </li>
         <li class="third-col">
-            <div class="container"><h4>'T excuus</h4></div>
+            <a href="#" target="_blank" style="text-decoration: none; decoration: none;">
+                <div class="card">
+                    <img src="../assets/img/logo-dulci.png" />
+                    <!--<div style="height: 1px; width: 100%; background: black;"> </div>-->
+                    <div class="text-container">
+                        <p>Dulci</p>
+                    </div>
+                </div>
+            </a>
         </li>
     </ul>
     
@@ -318,7 +341,71 @@
     
     <ul class="wrapper">
         <li class="first-col">
-            <div class="contactForm"></div>
+            <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Book Me - Formoid form css</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="blurBg-false" style="background-color:#EBEBEB">
+
+
+
+<!-- Start Formoid form-->
+<link rel="stylesheet" href="formoid_files/formoid1/formoid-flat-yellow.css" type="text/css" />
+<script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+<form class="formoid-flat-yellow"
+      id="booking-from"
+      style="background-color:#f6f6f6;font-size:15px;font-family:'Lato', sans-serif;color:#666666;max-width:480px;min-width:360px"
+      method="post"
+      enctype="text/plain">
+    <div class="title">
+        <h2>Book Me</h2>
+    </div>
+	<div class="element-input">
+        <label class="title">Name<span class="required">*</span></label>
+        <input class="large" id="name" type="text" name="input" required="required"/>
+    </div>
+	<div class="element-textarea">
+        <label class="title">Discription</label>
+        <textarea class="medium" id="discription"  name="textarea" cols="20" rows="5" ></textarea>
+    </div>
+	<div class="element-date">
+        <label class="title">Date<span class="required">*</span></label>
+        <input class="large" id="date"  data-format="yyyy-mm-dd" type="date" name="date" required="required" placeholder="yyyy-mm-dd"/>
+    </div>
+	<div class="element-email">
+        <label class="title">Email<span class="required">*</span></label>
+        <input class="large" id="mail"  type="email" name="email" value="" required="required"/>
+    </div>
+	<div class="element-phone"><label class="title">Phone Number</label>
+        <input class="large" id="phone"  type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone"  value=""/>
+    </div>
+    <div class="submit">
+        <input type="button" id="send" value="Send Mail"/>
+    </div>
+</form>
+<!-- Stop Formoid form-->
+
+<script>
+    $(document).ready(function() {
+        $('#send').click(function() {
+            $('#booking-from').attr('action',
+                'mailto:milebril1@hotmail.com?subject=Booking Cope' +
+                '&body= Hoi' +
+                'name: ' + $('#name').val() +
+                'discription: ' + $('#discription').val());
+            $('#booking-from').submit();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
+
         </li>
         <li class="second-col">
             <div class="vertical-line"></div>
@@ -348,7 +435,7 @@
             <a href="#" id="contactlink">Contact</a>
         </nav>
             
-        <p class="copyright">Rights reserved 2016</p>
+        <p class="copyright">Rights reserved 2017</p>
         </div>
         
     </div>

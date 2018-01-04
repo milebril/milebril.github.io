@@ -27,10 +27,12 @@
       height: 100px;
       width: 100px;
       background: white;
-      opacity: 0.8; }
+      opacity: 0.8;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
       .about-section .lockup [class^="icon-"].icon-profile {
         order: 1; }
       .about-section .lockup [class^="icon-"].icon-soundcloud {
+        text-align: center;
         order: 2; }
       .about-section .lockup [class^="icon-"].icon-youtube {
         order: 4; }
