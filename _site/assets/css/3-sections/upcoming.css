@@ -11,13 +11,14 @@
     margin: 0;
     text-transform: uppercase; }
   .upcoming-section .boxes {
-    padding: 30px 0;
+    padding: 30px;
     align-items: center;
     margin: 0 auto;
     text-align: center; }
     .upcoming-section .boxes li {
       display: inline-block;
       margin-right: 20px;
+      margin-bottom: 20px;
       color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       font-weight: 700;

@@ -2,22 +2,76 @@
     
     <h3>Contact</h3>
     
+    <!--<ul class="wrapper">-->
+
+    <div style="text-align: center">
+        <p class="text">
+
+            <strong>Email: </strong>corneelpeters98@hotmail.com <br>
+            <strong>Phone: </strong>04........ <br>
+            <strong>Address:</strong> Stationsstraat 39 3070 Kortenberg
+            <br><br>
+            Or fill out the form below, and we can get in touch as soon as possible.
+
+        </p>
+    </div>
+
     <ul class="wrapper">
-        <li class="first-col">
-            {% include formoid.html %}
-        </li>
-        <li class="second-col">
-            <div class="vertical-line"></div>
-        </li>
-        <li class="third-col">
-            <div class="contactText">
-                Corneel Peters <br>
-                Stationsstraat 38 <br>
-                3070 Kortenberg BE <br>
-                04........ <br>
-                corneelpeters98@hotmail.com
+        <form class="contact-form" method="post", action="contact_form.php">
+            <li class="first-col">
+                <label class="title">First Name</label> <br>
+                <input type="text" class="text-field" id="first-name">
+            </li>
+            <li class="second-col">
+                <label class="title">Last Name</label> <br>
+                <input type="text" class="text-field" id="last-name">
+            </li>
+            <div>
+                <label class="title">Description</label> <br>
+                <textarea type="text"  class="text-field" cols="20" rows="5" id="description"></textarea>
             </div>
-        </li>
+            <div>
+                <label class="title">Date</label> <br>
+                <input type="text" class="text-field">
+            </div>
+            <div>
+                <label class="title">Email</label> <br>
+                <input type="text" class="text-field" id="email">
+            </div>
+            <div>
+                <label class="title">Phone Number</label> <br>
+                <input type="text" class="text-field" id="phone-number">
+            </div>
+            <button class="button" id="submit" id="send-from" type="button">Send</button>
+        </form>
     </ul>
-    
 </section>
+
+<script>
+    $(document).ready(function() {
+        $("#submit").click(function() {
+            var name = $("#first-name").val() + " " + $("#last-name").val();
+            var email = $("#email").val();
+            var message = $("#description").val();
+            var contact = $("#phone-number").val();
+            $("#returnmessage").empty(); // To empty previous error/success message.
+            // Checking for blank fields.
+            if (name == '' || email == '' || contact == '') {
+                alert("Please Fill Required Fields");
+            } else {
+                var mailto_link = 'mailto:' + 'corneelpeters98@hotmail.com' +
+                '?subject=' + 'Booking Cope' +
+                '&body=' + 'Name: ' + name + '%0D%0A' +
+                            'Message: ' + message + '%0D%0A' +
+                            'Email: ' + email + '%0D%0A' +
+                            'Phone: ' + contact + '%0D%0A';
+
+                win = window.open(mailto_link, 'emailWindow');
+                if (win && win.open && !win.closed) win.close();
+            }
+        });
+    });
+
+
+</script>
+
