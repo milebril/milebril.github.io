@@ -19,11 +19,11 @@
     <ul class="wrapper">
         <form class="contact-form" method="post", action="contact_form.php">
             <li class="first-col">
-                <label class="title">First Name</label> <br>
+                <label class="title">First Name</label><span  class="required">*</span> <br>
                 <input type="text" class="text-field" id="first-name">
             </li>
             <li class="second-col">
-                <label class="title">Last Name</label> <br>
+                <label class="title">Last Name</label><span class="required">*</span> <br>
                 <input type="text" class="text-field" id="last-name">
             </li>
             <div>
@@ -35,11 +35,11 @@
                 <input type="text" class="text-field">
             </div>
             <div>
-                <label class="title">Email</label> <br>
+                <label class="title">Email</label><span class="required">*</span> <br>
                 <input type="text" class="text-field" id="email">
             </div>
             <div>
-                <label class="title">Phone Number</label> <br>
+                <label class="title">Phone Number</label><span class="required">*</span> <br>
                 <input type="text" class="text-field" id="phone-number">
             </div>
             <button class="button" id="submit" id="send-from" type="button">Send</button>
@@ -57,6 +57,14 @@
             $("#returnmessage").empty(); // To empty previous error/success message.
             // Checking for blank fields.
             if (name == '' || email == '' || contact == '') {
+                console.log('Hoi');
+                if ($("#first-name").val() == '') {
+
+
+                    //$("#first-name").removeClass('text-field');
+                    $("#first-name").addClass('error');
+                    console.log($("#first-name"));
+                }
                 alert("Please Fill Required Fields");
             } else {
                 var mailto_link = 'mailto:' + 'corneelpeters98@hotmail.com' +
@@ -68,6 +76,8 @@
 
                 win = window.open(mailto_link, 'emailWindow');
                 if (win && win.open && !win.closed) win.close();
+
+                $('contact-form').reset()
             }
         });
     });

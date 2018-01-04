@@ -59,6 +59,10 @@
     width: 100%;
   }
 
+  .contact-form .error input[type=text] {
+    border-color:#D893A1;
+  }
+
   .contact-form input[type=text],
   .contact-form input[type=tel],
   .contact-form input[type=email],
@@ -108,6 +112,11 @@
     border-radius:6px;
 
     float: right;
+  }
+
+  .required {
+    color:#FF9999;
+    margin-left: 2px;
   }
 
   .title {
