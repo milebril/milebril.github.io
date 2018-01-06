@@ -385,46 +385,44 @@
 </section>
 
 <script>
-    $(document).ready(function() {
-        $("#submit").click(function() {
-            var name = $("#first-name").val() + " " + $("#last-name").val();
-            var email = $("#email").val();
-            var message = $("#description").val();
-            var contact = $("#phone-number").val();
+    $("#submit").click(function() {
+        var name = $("#first-name").val() + " " + $("#last-name").val();
+        var email = $("#email").val();
+        var message = $("#description").val();
+        var contact = $("#phone-number").val();
 
-            var error = false;
+        var error = false;
 
-            $("input, textarea").each(function(){
-                console.log(this)
-                if ($(this).val() == '') {
-                    $(this).addClass('error');
-                    error = true;
-                }
+        $("input, textarea").each(function(){
+            console.log(this)
+            if ($(this).val() == '') {
+                $(this).addClass('error');
+                error = true;
+            }
+        });
+
+
+        if (error) {
+            alert("Please Fill Required Fields");
+        } else {
+            var mailto_link = 'mailto:' + 'corneelpeters98@hotmail.com' +
+            '?subject=' + 'Booking Cope' +
+            '&body=' + 'Name: ' + name + '%0D%0A' +
+                        'Message: ' + message + '%0D%0A' +
+                        'Email: ' + email + '%0D%0A' +
+                        'Phone: ' + contact + '%0D%0A';
+
+            win = window.open(mailto_link, 'emailWindow');
+            if (win && win.open && !win.closed) win.close();
+
+            //Remove Errors
+            $("textarea, input").each(function(){
+                $(this).removeClass('error');
             });
 
 
-            if (error) {
-                alert("Please Fill Required Fields");
-            } else {
-                var mailto_link = 'mailto:' + 'corneelpeters98@hotmail.com' +
-                '?subject=' + 'Booking Cope' +
-                '&body=' + 'Name: ' + name + '%0D%0A' +
-                            'Message: ' + message + '%0D%0A' +
-                            'Email: ' + email + '%0D%0A' +
-                            'Phone: ' + contact + '%0D%0A';
-
-                win = window.open(mailto_link, 'emailWindow');
-                if (win && win.open && !win.closed) win.close();
-
-                //Remove Errors
-                $("textarea, input").each(function(){
-                    $(this).removeClass('error');
-                });
-
-
-                $('.contact-form').trigger('reset');
-            }
-        });
+            $('.contact-form').trigger('reset');
+        }
     });
 
 </script>
