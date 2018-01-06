@@ -6,13 +6,14 @@
     padding-bottom: 30px;
     
     h3 {
-        text-align: center;
-        font-size: 24px;
-        font-weight: 700;
-        color: #F5B616;
-        padding-top: 75px;
-        margin: 0;
-        text-transform: uppercase;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: #F5B616;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      margin: 0;
+      text-transform: uppercase;
     }
 
   .text {
@@ -59,10 +60,6 @@
     width: 100%;
   }
 
-  .contact-form .error input[type=text] {
-    border-color:#D893A1;
-  }
-
   .contact-form input[type=text],
   .contact-form input[type=tel],
   .contact-form input[type=email],
@@ -75,7 +72,6 @@
     border-color: #bdc3c7;
     -webkit-transition: border-color 0.6s;
     transition: border-color 0.6s;
-    //border-radius:6px;
 
     padding: 6px 10px;
 
@@ -90,9 +86,13 @@
     font-size: 1em;
   }
 
-  .contact-form input[type=text] {
-    border-color: red;
+  .text-field.error {
+    border-color:#D893A1 !important;
   }
+
+  //.contact-form input[type=text] {
+  //  border-color: red !important;
+  //}
 
   .button {
     display: inline-block;

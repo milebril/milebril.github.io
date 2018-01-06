@@ -6,7 +6,8 @@
     font-size: 24px;
     font-weight: 700;
     color: #F5B616;
-    padding-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     margin: 0;
     text-transform: uppercase; }
   .contact-section .text {
@@ -39,8 +40,6 @@
     transition: border-color 0.6s;
     max-width: 700px;
     width: 100%; }
-  .contact-section .contact-form .error input[type=text] {
-    border-color: #D893A1; }
   .contact-section .contact-form input[type=text],
   .contact-section .contact-form input[type=tel],
   .contact-section .contact-form input[type=email],
@@ -61,6 +60,8 @@
     -moz-appearance: none;
     appearance: normal;
     font-size: 1em; }
+  .contact-section .text-field.error {
+    border-color: #D893A1 !important; }
   .contact-section .button {
     display: inline-block;
     padding: 4px 12px;

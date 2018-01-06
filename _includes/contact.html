@@ -27,11 +27,11 @@
                 <input type="text" class="text-field" id="last-name">
             </li>
             <div>
-                <label class="title">Description</label> <br>
-                <textarea type="text"  class="text-field" cols="20" rows="5" id="description"></textarea>
+                <label class="title">Description</label><span class="required">*</span> <br>
+                <textarea type="text"  class="text-field" style="resize: vertical" cols="20" rows="5" id="description"></textarea>
             </div>
             <div>
-                <label class="title">Date</label> <br>
+                <label class="title">Date</label><span class="required">*</span> <br>
                 <input type="text" class="text-field">
             </div>
             <div>
@@ -54,17 +54,19 @@
             var email = $("#email").val();
             var message = $("#description").val();
             var contact = $("#phone-number").val();
-            $("#returnmessage").empty(); // To empty previous error/success message.
-            // Checking for blank fields.
-            if (name == '' || email == '' || contact == '') {
-                console.log('Hoi');
-                if ($("#first-name").val() == '') {
 
+            var error = false;
 
-                    //$("#first-name").removeClass('text-field');
-                    $("#first-name").addClass('error');
-                    console.log($("#first-name"));
+            $("input, textarea").each(function(){
+                console.log(this)
+                if ($(this).val() == '') {
+                    $(this).addClass('error');
+                    error = true;
                 }
+            });
+
+
+            if (error) {
                 alert("Please Fill Required Fields");
             } else {
                 var mailto_link = 'mailto:' + 'corneelpeters98@hotmail.com' +
@@ -77,11 +79,16 @@
                 win = window.open(mailto_link, 'emailWindow');
                 if (win && win.open && !win.closed) win.close();
 
-                $('contact-form').reset()
+                //Remove Errors
+                $("textarea, input").each(function(){
+                    $(this).removeClass('error');
+                });
+
+
+                $('.contact-form').trigger('reset');
             }
         });
     });
-
 
 </script>
 
